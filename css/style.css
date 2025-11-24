@@ -1,0 +1,12 @@
+body {font-family: Inter, sans-serif;}
+.hero-half {height:50vh; position:relative; overflow:hidden;}
+.aero-curve {
+position:absolute; width:100%; height:100%;
+background: radial-gradient(circle at 40% 60%, #8ACBFF44 0%, transparent 60%),
+            radial-gradient(circle at 70% 40%, #C8113F33 0%, transparent 60%);
+filter: blur(40px); opacity:0.9;
+animation:aeroFloat 9s ease-in-out infinite alternate;
+}
+@keyframes aeroFloat {from{transform:translateY(-12px);} to{transform:translateY(12px);}}
+.page-exit {animation: pageExit .38s ease forwards;}
+@keyframes pageExit {from{opacity:1;} to{opacity:0; transform:translateY(12px) skewY(-2deg);}}
